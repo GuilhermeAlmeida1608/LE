@@ -126,8 +126,8 @@ d3.json("areas.json").then(function (data) {
     event.subject.fy = event.subject.y;
     for (let i = 0; i < data.nodes.length; i++) {
       if (data.nodes[i].id == event.subject.id) {
-        data.nodes[i].radius += 1;
-        event.subject.radius += 1;
+        data.nodes[i].radius += 3;
+        event.subject.radius += 3;
       }
     }
 

@@ -2,23 +2,21 @@
 :root {
   font-size: 1.4vw; /* Define o tamanho da fonte padrão para o elemento raiz */
 
-  --amarelo: #FEEE0E;
+  --amarelo: #feee0e;
 }
-
 
 body {
   margin: 0;
 
-  font-family: 'Helvetica', sans-serif;
-  color: rgb(10,10,10);
+  font-family: "Helvetica", sans-serif;
+  color: rgb(10, 10, 10);
 
   /*cursor: url(assets/Cursor_sitev4.svg) 6 6, auto;*/
   cursor: none;
-
 }
 
-b{
-  font-family: 'Helvetica-Bold', sans-serif;
+b {
+  font-family: "Helvetica-Bold", sans-serif;
 }
 
 /*Footer*/
@@ -33,12 +31,12 @@ button {
   padding: 2vw;
   padding-top: 6vh;
   padding-bottom: 2vh;
-  font-family: 'Helvetica', sans-serif;
+  font-family: "Helvetica", sans-serif;
   transition: color 0.5s ease;
 }
 
-button:hover{
-  color:white;
+button:hover {
+  color: white;
 }
 
 button:active {
@@ -77,6 +75,7 @@ footer {
   text-align: center;
   display: inline-block;
   cursor: none;
+  z-index: 99;
 }
 
 #drag-1 {
@@ -112,45 +111,45 @@ footer {
 p {
   width: 40vw;
   margin: 2vw;
-  font-size: 1.30rem;
+  font-size: 1.3rem;
 }
 
-h1{
+h1 {
   font-size: 5rem;
   margin: 2vw;
   text-transform: uppercase;
   line-height: 1;
 }
-h2{
+h2 {
   font-size: 6rem;
   margin: 2vw;
-  font-family: 'Helvetica-Bold', sans-serif;
+  font-family: "Helvetica-Bold", sans-serif;
   text-transform: uppercase;
   line-height: 1;
   letter-spacing: -0.04em;
 }
-h3{
+h3 {
   font-size: 3rem;
   margin: 2vw;
   margin-top: 1vh;
 }
-h4{
+h4 {
   font-size: 4rem;
   margin: 2vw;
   margin-top: 10vh;
   text-transform: uppercase;
   line-height: 1;
 }
-h5{
+h5 {
   margin: 2vw;
   font-size: 1.5rem;
-  font-family: 'Helvetica-Bold',sans-serif;
+  font-family: "Helvetica-Bold", sans-serif;
   margin-top: 3vh;
   text-transform: uppercase;
 }
 #home,
 #editorial,
- #article1,
+#article1,
 #article2,
 #join_our_movement {
   position: fixed;
@@ -225,20 +224,20 @@ h5{
 }
 
 @font-face {
-  font-family: 'Helvetica';
-  src: url('fonts/Helvetica.ttf') format('truetype'); /* Substitua pelo caminho real do seu arquivo de fonte regular */
+  font-family: "Helvetica";
+  src: url("fonts/Helvetica.ttf") format("truetype"); /* Substitua pelo caminho real do seu arquivo de fonte regular */
   font-weight: normal;
   font-style: normal;
 }
 
 @font-face {
-  font-family: 'Helvetica-Bold';
-  src: url('fonts/Helvetica-Bold.ttf') format('truetype'); /* Substitua pelo caminho real do seu arquivo de fonte regular */
+  font-family: "Helvetica-Bold";
+  src: url("fonts/Helvetica-Bold.ttf") format("truetype"); /* Substitua pelo caminho real do seu arquivo de fonte regular */
   font-weight: bold;
   font-style: normal;
 }
 
-.aliLeft{
+.aliLeft {
   width: 100vw;
   position: relative;
   display: inline;
@@ -249,7 +248,7 @@ h5{
   display: table;
   clear: both;
 }
-.aliRight{
+.aliRight {
   width: 100vw;
   position: relative;
   display: inline;
@@ -265,31 +264,31 @@ h5{
   float: left;
 }*/
 
-.aliRight p{
+.aliRight p {
   float: right;
   position: relative;
   display: inline;
   clear: right;
 }
 
-#article2 .aliRight p{
+#article2 .aliRight p {
   margin-left: 30vw;
 }
 
-#article2 .aliRight h4{
+#article2 .aliRight h4 {
   /*float: right;*/
   text-align: right;
   margin-right: 2vw;
 }
 
-#article1 .aliRight p{
+#article1 .aliRight p {
   text-align: right;
 }
-#article2 h4{
+#article2 h4 {
   width: 96vw;
 }
 
-#article2 .aliRight h5{
+#article2 .aliRight h5 {
   width: 50vw;
   float: right;
   display: flex;
@@ -297,17 +296,18 @@ h5{
   text-align: left;
 }
 
-#article1 .aliRight h4{
+#article1 .aliRight h4 {
   text-align: right;
 }
 
-#article2 p{
+#article2 p {
   width: 50vw;
   display: flex;
   flex-direction: column;
 }
 
-#article1, #article2 {
+#article1,
+#article2 {
   margin-bottom: 20vh;
 }
 
@@ -319,4 +319,5 @@ h5{
   background-color: var(--amarelo);
   mix-blend-mode: exclusion;
   pointer-events: none; /* Make sure the circle doesn't interfere with user interactions */
+  z-index: 0;
 }
