@@ -9,7 +9,12 @@ body {
 
   font-family: 'Helvetica', sans-serif;
   color: rgb(10,10,10);
+
+  /*cursor: url(assets/Cursor_sitev4.svg) 6 6, auto;*/
+  cursor: none;
+
 }
+
 b{
   font-family: 'Helvetica-Bold', sans-serif;
 }
@@ -21,11 +26,13 @@ button {
   background: none;
   border: none;
   padding: 0;
-  cursor: pointer;
+  /*cursor: url(assets/Cursor_sitev2_hoover.svg) 6 6, pointer;*/
+  cursor: none;
   padding: 2vw;
   padding-top: 6vh;
   padding-bottom: 2vh;
   font-family: 'Helvetica', sans-serif;
+  transition: color 0.5s ease;
 }
 
 button:hover{
@@ -67,6 +74,7 @@ footer {
   user-select: none;
   text-align: center;
   display: inline-block;
+  cursor: none;
 }
 
 #drag-1 {
@@ -299,4 +307,14 @@ h5{
 
 #article1, #article2 {
   margin-bottom: 20vh;
+}
+
+.circle-cursor {
+  position: absolute;
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  background-color: yellow;
+  mix-blend-mode: exclusion;
+  pointer-events: none; /* Make sure the circle doesn't interfere with user interactions */
 }

@@ -9,6 +9,7 @@
     <title>Alta&Baixa</title>
   </head>
   <body>
+    <div class="pagina-com-cursor-customizado" id="cursor"></div>
     <main>
       <div id="home">
         <h1 id="main_title">ALTA BAIXA</h1>
@@ -985,5 +986,24 @@
         element.style.display = display;
       }
     </script>
+
+<script>
+  document.addEventListener('DOMContentLoaded', function () {
+  const circleCursor = document.createElement('div');
+  circleCursor.classList.add('circle-cursor');
+  document.body.appendChild(circleCursor);
+
+  document.addEventListener('mousemove', function (event) {
+    const x = event.clientX;
+    const y = event.clientY;
+
+    // Adjusting for the circle's width and height
+    circleCursor.style.left = (x - 50) + 'px';
+    circleCursor.style.top = (y - 50) + 'px';
+  });
+});
+</script>
+
+
   </body>
 </html>
