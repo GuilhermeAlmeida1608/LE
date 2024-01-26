@@ -3,99 +3,53 @@
     {
       "id": "Jardins da Quinta das Lágrimas",
       "group": "NG",
-      "radius": 40
+      "radius": 60
     },
     {
       "id": "Portugal dos Pequenitos",
       "group": "NG",
-      "radius": 40
+      "radius": 60
     },
     {
       "id": "Biblioteca Joanina",
       "group": "NG",
-      "radius": 40
+      "radius": 60
     },
     {
       "id": "Mercado Municipal D.Pedro V",
       "group": "NG",
-      "radius": 40
+      "radius": 60
     },
     {
       "id": "Mosteiro de Santa Cruz",
       "group": "NG",
-      "radius": 40
+      "radius": 60
     },
     {
       "id": "Dom Dinis",
       "group": "NG",
-      "radius": 40
+      "radius": 60
     },
     {
       "id": "Paço das Escolas",
       "group": "G",
-      "radius": 40
+      "radius": 60
     },
     {
       "id": "Alma Shopping",
       "group": "G",
-      "radius": 40
+      "radius": 60
     },
     {
       "id": "Passaporte",
       "group": "G",
-      "radius": 40
+      "radius": 60
     },
     {
       "id": "Quebra Costas",
       "group": "G",
-      "radius": 40
+      "radius": 60
     }
   ],
-  "links": [
-    {
-      "source": "Jardins da Quinta das Lágrimas",
-      "target": "Portugal dos Pequenitos",
-      "value": 10
-    },
-    {
-      "source": "Portugal dos Pequenitos",
-      "target": "Passaporte",
-      "value": 10
-    },
-    {
-      "source": "Passaporte",
-      "target": "Quebra Costas",
-      "value": 10
-    },
-    {
-      "source": "Passaporte",
-      "target": "Biblioteca Joanina",
-      "value": 10
-    },
-    {
-      "source": "Biblioteca Joanina",
-      "target": "Paço das Escolas",
-      "value": 10
-    },
-    {
-      "source": "Paço das Escolas",
-      "target": "Dom Dinis",
-      "value": 10
-    },
-    {
-      "source": "Quebra Costas",
-      "target": "Mosteiro de Santa Cruz",
-      "value": 10
-    },
-    {
-      "source": "Mosteiro de Santa Cruz",
-      "target": "Mercado Municipal D.Pedro V",
-      "value": 10
-    },
-    {
-      "source": "Dom Dinis",
-      "target": "Alma Shopping",
-      "value": 10
-    }
-  ]
+  "links": []
 }

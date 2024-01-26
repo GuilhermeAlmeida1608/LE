@@ -98,7 +98,7 @@ d3.json("areas.json").then(function (data) {
     circ
       .attr("cx", (d) => d.x)
       .attr("cy", (d) => d.y)
-      .attr("r", (d) => d.radius);
+      .attr("r", (d) => d.radiusp + 10);
 
     imagem
       .attr("x", (d) => d.x - d.radius)
@@ -109,7 +109,7 @@ d3.json("areas.json").then(function (data) {
     simulation
       .force(
         "charge",
-        d3.forceCollide((d) => d.radius + 10)
+        d3.forceCollide((d) => d.radius + 20)
       )
       .force("x", d3.forceX())
       .force("y", d3.forceY())
